@@ -10,6 +10,7 @@
             padding: 0;
             height: 100%;
             width: 100%;
+            font-family: 'Century Gothic', 'Microsoft YaHei', Verdana;
         }
         .left-col,.right-col{
             -moz-box-sizing: border-box;
@@ -24,7 +25,6 @@
             -moz-box-sizing: border-box;
             -webkit-box-sizing: border-box;
             box-sizing: border-box;
-            /*position: absolute;*/
             height: auto;
             margin: 0;
             padding: 20px;
@@ -39,12 +39,9 @@
         }
         .right-col{
             margin-left: 50%;
-            background: #ccc url(right.jpg) repeat top right;
+            background-color: #ccc;
             text-align: left;
-            z-index: 99;
-            -moz-transition:all .5s ease-in-out .1s;
-            -webkit-transition:all .5s ease-in-out .1s;
-            transition:all .5s linear .1s;
+            z-index: 80;
         }
         .left-col .wrapper div{
             margin-top: 10px;
@@ -65,7 +62,31 @@
         .left-col a{
             color: #ccc;
         }
+        .right-col li{
+            position: relative;
+        }
+        .right-col li div{
+            opacity: 0;
+            position: absolute;
+            width: 200px;
+            top: 34px;
+            left: -320px;
+            border: 2px solid #c2e1f5;
+            padding: 4px 6px;
+            font-size: 14px;
+            background-color: #88b7d5;
+            border-radius: 4px;
+            -moz-transition:all .3s ease-in-out .1s;
+            -webkit-transition:all .3s ease-in-out .1s;
+            transition:all .3s linear .1s;
+        }
+        .right-col li a:hover ~ div{
+            opacity: 1;
+            left: 0;
+            z-index: 85;
+        }
         .right-col a:link,.right-col a:visited{
+            z-index: 84;
             color: #08c;
         }
         .right-col a:hover,.right-col a:active{
@@ -84,9 +105,30 @@
     <div class="right-col">
         <div class="wrapper" id="right">
             <ol>
-                <li><a href="/bookmark">Bookmark Seperator</a></li>
-                <li><a href="/search">Union search</a></li>
-                <li><a href="/keycode">KeyCode & CharCode</a></li>
+                <li>
+                    <a href="/bookmark/">Bookmark Seperator</a>
+                    <div>
+                        书签整理小工具,提供很多特殊字符.
+                    </div>
+                </li>
+                <li>
+                    <a href="/search/">Union search</a>
+                    <div>
+                        综合搜索,提供多种搜索引擎及多种搜索类型.
+                    </div>
+                </li>
+                <li>
+                    <a href="/keycode/">KeyCode & CharCode</a>
+                    <div>
+                        获取键盘按键的keycode及字符的unicode编码.
+                    </div>
+                </li>
+                <li>
+                    <a href="/neuhelper/">Neu Helper</a>
+                    <div>
+                        为东软员工而写的谷歌浏览器扩展.
+                    </div>
+                </li>
             </ol>
         </div>
     </div>
@@ -95,9 +137,11 @@
         var left = document.getElementById('left');
         var right = document.getElementById('right');
         function v_align (dom) {
-            var winHeight = window.innerHeight || document.documentElement.clientHeight;
-            var domHeight = dom.offsetHeight;
-            dom.style.marginTop = ((winHeight - domHeight) / 2) + 'px' ;
+            var winHeight = window.innerHeight || document.documentElement.clientHeight,
+                domHeight = dom.offsetHeight,
+                height = (winHeight - domHeight) / 2;
+            height = (height > 0) ? height : 0;
+            dom.style.marginTop = height + 'px' ;
         }
         v_align(left);
         v_align(right);
