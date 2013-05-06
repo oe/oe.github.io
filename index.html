@@ -50,13 +50,14 @@
         .left-col .title{
             font-size: 200%;
             font-weight: bolder;
+            margin: 4px;
             text-transform: uppercase;
             text-shadow: 4px 4px 4px rgba(255,255,255,.16)
         }
-        .left-col .descript{
+        .left-col .description{
 
         }
-        .left-col .more{
+        .left-col .about{
             font-size: 50%;
         }
         .left-col a{
@@ -65,11 +66,18 @@
         .right-col li{
             position: relative;
         }
+        .right-col li h2{
+            margin: 4px;
+            font-weight: 400;
+            font-size: 40px;
+            transition: all .6s linear;
+            text-shadow: 2px 1px 2px rgba(255,255,255,.3);
+        }
         .right-col li div{
             opacity: 0;
             position: absolute;
             width: 200px;
-            top: 34px;
+            top: 45px;
             left: -320px;
             border: 2px solid #c2e1f5;
             padding: 4px 6px;
@@ -80,7 +88,7 @@
             -webkit-transition:all .3s ease-in-out .1s;
             transition:all .3s linear .1s;
         }
-        .right-col li a:hover ~ div{
+        .right-col li h2:hover ~ div{
             opacity: 1;
             left: 0;
             z-index: 85;
@@ -88,6 +96,7 @@
         .right-col a:link,.right-col a:visited{
             z-index: 84;
             color: #08c;
+            text-decoration: none;
         }
         .right-col a:hover,.right-col a:active{
             color: #005580;
@@ -97,35 +106,35 @@
 <body>
     <div class="left-col">
         <div class="wrapper" id="left">
-            <div class="title">Saiya's app lab</div>
-            <div class="descript">Saiya's sub domain for apps...</div>
-            <div class="more">Copyright &copy; <a href="http://www.evecalm.com">夏影 2011-2013</a>.</div>
+            <h1 class="title">Saiya's app lab</h1>
+            <div class="description">Saiya's sub domain for apps...</div>
+            <div class="about">Copyright &copy; <a href="http://www.evecalm.com">夏影 2011-2013</a>.</div>
         </div>
     </div>
     <div class="right-col">
         <div class="wrapper" id="right">
             <ol>
                 <li>
-                    <a href="/bookmark/">Bookmark Seperator</a>
-                    <div>
+                    <h2><a href="/bookmark/">Bookmark Seperator</a></h2>
+                    <div class="detail">
                         书签整理小工具,提供很多特殊字符.
                     </div>
                 </li>
                 <li>
-                    <a href="/search/">Union search</a>
-                    <div>
+                    <h2><a href="/search/">Union search</a></h2>
+                    <div class="detail">
                         综合搜索,提供多种搜索引擎及多种搜索类型.
                     </div>
                 </li>
                 <li>
-                    <a href="/keycode/">KeyCode & CharCode</a>
-                    <div>
+                    <h2><a href="/keycode/">KeyCode & CharCode</a></h2>
+                    <div class="detail">
                         获取键盘按键的keycode及字符的unicode编码.
                     </div>
                 </li>
                 <li>
-                    <a href="/neuhelper/">Neu Helper</a>
-                    <div>
+                    <h2><a href="/neuhelper/">Neuhelper</a></h2>
+                    <div class="detail">
                         为东软员工而写的谷歌浏览器扩展.
                     </div>
                 </li>
