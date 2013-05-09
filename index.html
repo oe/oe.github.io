@@ -152,11 +152,16 @@
             height = (height > 0) ? height : 0;
             dom.style.marginTop = height + 'px' ;
         }
-        v_align(left);
-        v_align(right);
+        function throttle(fn,context) {
+            clearTimeout(fn.tId);
+            fn.tId = setTimeout(function () {
+                fn.call(context,left);
+                fn.call(context,right);
+            },100);
+        }
+        throttle(v_align);
         window.onresize = function () {
-            v_align(left);
-            v_align(right);
+            throttle(v_align);
         }
     </script>
 </body>
