@@ -1,0 +1,36 @@
+---
+import { Code2, Globe2, Github, Briefcase } from 'lucide-react'
+
+---
+
+<footer class="flex justify-center content-center gap-4 mb-8">
+  <a href="https://evecalm.com/">
+    <Globe2 />
+    Homepage
+  </a>
+  <a href="https://github.com/oe/">
+    <Github />
+    Github
+  </a>
+  <a href="https://github.com/oe/oe.github.io" title="source code of currunt page">
+    <Code2 />
+    Source
+  </a>
+  <a href="https://forth.ink/">
+    <Briefcase />
+    More Works
+  </a>
+</footer>
+
+<style lang="scss">
+  footer {
+    svg {
+      display: inline-block;
+      vertical-align: text-bottom;
+    }
+
+    @media screen and (max-width: 530px) {
+      flex-wrap: wrap;
+    }
+  }
+</style>
