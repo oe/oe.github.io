@@ -45,7 +45,7 @@ export interface IWork {
 export const WORKS: IWork[] = [
   {
     title: 'Union Search',
-    description: 'A tinny(less than 50kb) web app makes the best search engine available for every one.',
+    description: 'A tinny(less than 50kb) web app makes the best search engine available for every one',
     image: '',
     link: 'https://search.evecalm.com/',
     github: 'https://github.com/oe/search',
@@ -61,7 +61,7 @@ export const WORKS: IWork[] = [
   },
   {
     title: 'Bookmark Separator',
-    description: 'A tinny webapp that .',
+    description: 'A tinny webapp that can help you separate bookmarks into different categories',
     image: '',
     link: 'https://app.evecalm.com/bookmark/',
     github: 'https://github.com/oe/bookmark',
@@ -77,7 +77,7 @@ export const WORKS: IWork[] = [
   },
   {
     title: 'Neuhelper',
-    description: '为东软员工而写的谷歌浏览器扩展.',
+    description: '为东软员工而写的谷歌浏览器扩展',
     image: '',
     link: 'https://app.evecalm.com/neuhelper/',
     github: 'https://github.com/oe/neuhelper',
@@ -127,7 +127,7 @@ export const WORKS: IWork[] = [
   },
   {
     title: 'truncate-html',
-    description: 'Truncate html string(even contains emoji chars) and keep tags in safe. You can custom ellipsis sign, ignore unwanted elements and truncate html by words.',
+    description: 'Truncate html string(even contains emoji chars) and keep tags in safe. You can custom ellipsis sign, ignore unwanted elements and truncate html by words',
     image: '',
     link: 'https://www.npmjs.com/package/truncate-html',
     github: 'https://github.com/oe/truncate-html',
@@ -135,7 +135,7 @@ export const WORKS: IWork[] = [
   },
   {
     title: 'duplex-message',
-    description: 'A tinny(~3kb) utility that can simplify cross window(iframes, workers, same origin windows) and electron main / renderer process communications(please use npm package `simple-electron-ipc`)',
+    description: 'A tinny(~3kb) utility that can simplify cross window(iframes, workers, same origin windows) and electron main / renderer process communications (please use npm package `simple-electron-ipc`)',
     image: '',
     link: 'https://www.npmjs.com/package/duplex-message',
     github: 'https://github.com/oe/duplex-message',
@@ -176,7 +176,7 @@ export const WORKS: IWork[] = [
   },
   {
     title: 'Download Github Sub-folder',
-    description: 'A user script that allows you to download a Github repo or directory with a single click.',
+    description: 'A user script that allows you to download a Github repo or directory with a single click',
     image: '',
     link: 'https://openuserjs.org/scripts/oe/Download_github_repo_online',
     github: 'https://github.com/oe/download-git-userscript',
@@ -193,7 +193,7 @@ export const WORKS: IWork[] = [
   },
   {
     title: 'SourceTree',
-    description: 'Search bookmarks in SourceTree and open with code editor / sourcetree / finder via Alfred.',
+    description: 'Search bookmarks in SourceTree and open with code editor / sourcetree / finder via Alfred',
     image: 'https://alfred.app/workflows/saiya/sourcetree/icon.png',
     link: 'https://alfred.app/workflows/saiya/sourcetree/',
     github: 'https://github.com/oe/sourcetree-alfred-workflow',
