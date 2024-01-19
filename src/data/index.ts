@@ -1,7 +1,7 @@
 
 export const CATEGORIES = [
-  'alfred',
   'webapp',
+  'alfred',
   'userscript',
   'chrome-extension',
   'npm',
@@ -10,6 +10,16 @@ export const CATEGORIES = [
 ] as const
 
 export type ICategory = typeof CATEGORIES[number]
+
+export const CATEGORY_NAMES: Record<ICategory, string> = {
+  webapp: 'Web App',
+  alfred: 'Alfred Workflow',
+  userscript: 'Userscript',
+  'chrome-extension': 'Chrome Extension',
+  npm: 'NPM Package',
+  'mini-program': 'Mini Program',
+  others: 'Others',  
+}
 
 export const TAGS = [
   'unmaintained',
@@ -116,6 +126,14 @@ export const WORKS: IWork[] = [
     cate: 'others',
   },
   {
+    title: 'truncate-html',
+    description: 'Truncate html string(even contains emoji chars) and keep tags in safe. You can custom ellipsis sign, ignore unwanted elements and truncate html by words.',
+    image: '',
+    link: 'https://www.npmjs.com/package/truncate-html',
+    github: 'https://github.com/oe/truncate-html',
+    cate: 'npm',
+  },
+  {
     title: 'duplex-message',
     description: 'A tinny(~3kb) utility that can simplify cross window(iframes, workers, same origin windows) and electron main / renderer process communications(please use npm package `simple-electron-ipc`)',
     image: '',
@@ -129,14 +147,6 @@ export const WORKS: IWork[] = [
     image: '',
     link: 'https://www.npmjs.com/package/lerna-ci',
     github: 'https://github.com/oe/lerna-ci',
-    cate: 'npm',
-  },
-  {
-    title: 'truncate-html',
-    description: 'Truncate html string(even contains emoji chars) and keep tags in safe. You can custom ellipsis sign, ignore unwanted elements and truncate html by words.',
-    image: '',
-    link: 'https://www.npmjs.com/package/truncate-html',
-    github: 'https://github.com/oe/truncate-html',
     cate: 'npm',
   },
   {
@@ -176,7 +186,7 @@ export const WORKS: IWork[] = [
     title: 'Clean Qzone',
     description: '移除QQ空间广告, make your Qzone center clean and clear',
     image: '',
-    link: 'https://openuserjs.org/scripts/oe/Download_github_repo_online',
+    link: 'https://github.com/oe/clean-qzone',
     github: 'https://github.com/oe/clean-qzone',
     cate: 'userscript',
     tags: ['unmaintained'],

@@ -1,40 +1,53 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import Navi from '../components/SideMenu.astro';
+import Footer from '../layouts/Footer.astro';
 
-import { WORKS } from '@/data';
+import { WORKS, CATEGORIES, CATEGORY_NAMES } from '@/data';
 
 ---
 
-<Layout title="Works of Saiya">
+<Layout title="Open Source Works by Saiya">
 	<main>
-		<h1>Welcome to <span class="text-gradient">Saiya</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul role="list" class="link-card-grid">
-			{
-				WORKS.map(work => (
-					<Card
-						href={work.link}
-						title={work.title}
-						body={work.description}
-					/>
-				))
-			}
-		</ul>
+		<h1>Works by <span class="text-gradient">Saiya</span></h1>
+		<Navi />
+		{
+			CATEGORIES.map(category => (
+				<div class="category-group">
+					<h2 id={category} class="category-title">{CATEGORY_NAMES[category]}</h2>
+					<ul role="list" class="link-card-grid">
+						{
+							WORKS
+								.filter(work => work.cate === category)
+								.map(work => (
+								<Card
+									href={work.link}
+									title={work.title}
+									body={work.description}
+									github={work.github}
+									cate={category}
+									image={work.image}
+								/>
+							))
+						}
+					</ul>
+				</div>
+			))
+		}
+		<Footer />
 	</main>
 </Layout>
 
-<style>
+<style lang="scss">
 	main {
+		position: relative;
 		margin: auto;
 		padding: 1rem;
 		width: 800px;
 		max-width: calc(100% - 2rem);
 		color: white;
-		font-size: 20px;
+		font-size: 18px;
 		line-height: 1.6;
 	}
 	.astro-a {
@@ -51,7 +64,17 @@ import { WORKS } from '@/data';
 		font-weight: 700;
 		line-height: 1;
 		text-align: center;
+		margin-top: 1em;
 		margin-bottom: 1em;
+	}
+	.category-group {
+		margin-bottom: 2rem;
+
+		.category-title {
+			font-size: 2rem;
+			font-weight: 700;
+			margin-bottom: 1rem;
+		}
 	}
 	.text-gradient {
 		background-image: var(--accent-gradient);
@@ -59,24 +82,6 @@ import { WORKS } from '@/data';
 		-webkit-text-fill-color: transparent;
 		background-size: 400%;
 		background-position: 0%;
-	}
-	.instructions {
-		margin-bottom: 2rem;
-		border: 1px solid rgba(var(--accent-light), 25%);
-		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
-		padding: 1.5rem;
-		border-radius: 8px;
-	}
-	.instructions code {
-		font-size: 0.8em;
-		font-weight: bold;
-		background: rgba(var(--accent-light), 12%);
-		color: rgb(var(--accent-light));
-		border-radius: 4px;
-		padding: 0.3em 0.4em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent-light));
 	}
 	.link-card-grid {
 		display: grid;

@@ -1,0 +1,50 @@
+---
+import { CATEGORIES, CATEGORY_NAMES } from '@/data';
+---
+
+<menu class="navi">
+  {
+    CATEGORIES.map(catetory => (
+      <a href={`#${catetory}`} class="navi__item" target="_self">
+        <span class="navi__item__text">{CATEGORY_NAMES[catetory]}</span>
+      </a>
+    ))
+  }
+</menu>
+
+<style lang="scss">
+  .navi {
+    text-align: center;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+
+    a {
+      display: inline-block;
+      background-color: #ffffff11;
+      padding: 0 8px;
+      border-radius: 8px;
+    }
+
+    @media screen and (min-width: 1090px) {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      position: fixed;
+      align-items: flex-start;
+      font-size: 16px;
+      opacity: 0.7;
+      left: calc(50vw + 400px);
+      a {
+        display: block;
+        background-color: transparent;
+        padding: 0 8px;
+      }
+    }
+  }
+</style>
