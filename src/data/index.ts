@@ -45,7 +45,7 @@ export interface IWork {
 export const WORKS: IWork[] = [
   {
     title: 'Union Search',
-    description: 'a tinny(less than 50kb) web app makes the best search engine available for every one.',
+    description: 'A tinny(less than 50kb) web app makes the best search engine available for every one.',
     image: '',
     link: 'https://search.evecalm.com/',
     github: 'https://github.com/oe/search',
@@ -53,7 +53,7 @@ export const WORKS: IWork[] = [
   },
   {
     title: 'DownGit',
-    description: 'directly download or create download link to any GitHub accessible directory or file',
+    description: 'Directly download or create download link to any GitHub accessible directory or file',
     image: '',
     link: 'https://downgit.evecalm.com/#/home',
     github: 'https://github.com/oe/downgit',
@@ -69,7 +69,7 @@ export const WORKS: IWork[] = [
   },
   {
     title: 'KeyCode & CharCode',
-    description: 'get keyboard\'s key code & character\'s unicode',
+    description: 'Get keyboard\'s key code & character\'s unicode',
     image: '',
     link: 'https://app.evecalm.com/keycode/',
     github: 'https://github.com/oe/keycode',
@@ -103,7 +103,7 @@ export const WORKS: IWork[] = [
   },
   {
     title: 'Web Extension Boilerplate',
-    description: 'web extension boilerplate base on Parcel, supports all technologies you familiar with. Manifest v3 ready!',
+    description: 'Web extension boilerplate base on Parcel, supports all technologies you familiar with. Manifest v3 ready!',
     image: '',
     link: 'https://github.com/oe/web-extension-boilerplate',
     github: 'https://github.com/oe/web-extension-boilerplate',
@@ -111,7 +111,7 @@ export const WORKS: IWork[] = [
   },
   {
     title: 'Webpack Userscript Template',
-    description: 'create your own userscript with modern technology powered by webpack',
+    description: 'Create your own userscript with modern technology powered by webpack',
     image: '',
     link: 'https://github.com/oe/webpack-userscript-template',
     github: 'https://github.com/oe/webpack-userscript-template',
@@ -119,7 +119,7 @@ export const WORKS: IWork[] = [
   },
   {
     title: 'SourceTree Custom Actions',
-    description: 'useful SourceTree custom actions in bash scripts',
+    description: 'Useful SourceTree custom actions in bash scripts',
     image: '',
     link: 'https://github.com/oe/sourcetree-custom-actions',
     github: 'https://github.com/oe/sourcetree-custom-actions',
@@ -151,7 +151,7 @@ export const WORKS: IWork[] = [
   },
   {
     title: 'composie',
-    description: 'compose middleware with router and run it like a charm',
+    description: 'Compose middleware with router and run it like a charm',
     image: '',
     link: 'https://www.npmjs.com/package/composie',
     github: 'https://github.com/oe/composie',
@@ -159,7 +159,7 @@ export const WORKS: IWork[] = [
   },
   {
     title: 'async-task-schedule',
-    description: 'schedule async tasks, remove redundant with cache support',
+    description: 'Schedule async tasks, remove redundant with cache support',
     image: '',
     link: 'https://www.npmjs.com/package/async-task-schedule',
     github: 'https://github.com/oe/async-task-schedule',
@@ -176,7 +176,7 @@ export const WORKS: IWork[] = [
   },
   {
     title: 'Download Github Sub-folder',
-    description: 'a userscript that can let you download github repo or directory via one-click',
+    description: 'A user script that allows you to download a Github repo or directory with a single click.',
     image: '',
     link: 'https://openuserjs.org/scripts/oe/Download_github_repo_online',
     github: 'https://github.com/oe/download-git-userscript',
@@ -201,7 +201,7 @@ export const WORKS: IWork[] = [
   },
   {
     title: 'QRCode',
-    description: 'generate qrcode in alfred workflow',
+    description: 'Generate QRCode in alfred workflow',
     image: '',
     link: 'https://github.com/oe/qrcode-alfred-workflow/raw/main/QRCode.alfredworkflow',
     github: 'https://github.com/oe/qrcode-alfred-workflow',
