@@ -5,14 +5,14 @@ import { CATEGORIES, CATEGORY_NAMES } from '@/data';
 <menu class="navi">
   {
     CATEGORIES.map(catetory => (
-      <a href={`#${catetory}`} class="navi__item" target="_self">
-        <span class="navi__item__text">{CATEGORY_NAMES[catetory]}</span>
+      <a href={`#${catetory}`} target="_self">
+        {CATEGORY_NAMES[catetory]}
       </a>
     ))
   }
 </menu>
 
-<style lang="scss">
+<style lang="scss" is:global>
   .navi {
     text-align: center;
     font-size: 14px;
