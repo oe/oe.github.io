@@ -16,9 +16,9 @@ interface Props {
 const { href, title, body, github, cate, image } = Astro.props;
 ---
 
-<li class="link-card">
+<li class="link-card p-px relative">
 	<Bg image={image} cate={cate} />
-	<div class="card-inner">
+	<div class="card-inner h-full flex flex-col rounded-lg opacity-80">
 	<a href={href} class="card-content">
 		<h3>
 			{title}
@@ -40,9 +40,15 @@ const { href, title, body, github, cate, image } = Astro.props;
 </li>
 <style lang="scss" is:global>
 	.link-card {
-		list-style: none;
-		padding: 1px;
-		position: relative;
+		--accent: 136, 58, 234;
+		--accent-light: 224, 204, 250;
+		--accent-dark: 49, 10, 101;
+		--accent-gradient: linear-gradient(
+			45deg,
+			rgb(var(--accent)),
+			rgb(var(--accent-light)) 30%,
+			white 60%
+		);
 		background-color: #23262d;
 		background-image: none;
 		background-size: 400%;
@@ -60,12 +66,7 @@ const { href, title, body, github, cate, image } = Astro.props;
 			}
 		}
 		.card-inner {
-			height: 100%;
-			display: flex;
-			flex-direction: column;
 			background-color: #23262d;
-			opacity: 0.8;
-			border-radius: 8px;
 		}
 
 		.card-content {

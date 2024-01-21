@@ -18,7 +18,7 @@ import { CATEGORIES, CATEGORY_NAMES } from '@/data';
     font-size: 14px;
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 8px;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -29,6 +29,7 @@ import { CATEGORIES, CATEGORY_NAMES } from '@/data';
       background-color: #ffffff11;
       padding: 0 8px;
       border-radius: 8px;
+
     }
 
     @media screen and (min-width: 1090px) {
@@ -44,6 +45,10 @@ import { CATEGORIES, CATEGORY_NAMES } from '@/data';
         display: block;
         background-color: transparent;
         padding: 0 8px;
+
+        &:hover {
+          opacity: 0.8;
+        }
       }
     }
   }
