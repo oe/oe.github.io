@@ -1,5 +1,5 @@
 ---
-import { Github } from 'lucide-react'
+import { Github, Unplug } from 'lucide-react'
 import { NpmTag } from './Tags'
 import { Bg } from './Bg'
 import { type ICategory } from '@/data'
@@ -10,10 +10,11 @@ interface Props {
 	github: string;
 	cate: ICategory;
 	image: string
+	deprecated?: boolean;
 }
 
 
-const { href, title, body, github, cate, image } = Astro.props;
+const { href, title, body, github, cate, image, deprecated } = Astro.props;
 ---
 
 <li class="link-card p-px relative">
@@ -22,6 +23,7 @@ const { href, title, body, github, cate, image } = Astro.props;
 	<a href={href} class="card-content">
 		<h3>
 			{title}
+			{ deprecated && <span title="discontinued"><Unplug className="inline-block align-top stroke-1 stroke-red-400" /></span> }
 			<span>&rarr;</span>
 		</h3>
 		<p>

@@ -37,9 +37,11 @@ export interface IWork {
   /** github source link */
   github: string
   /** category */
-  cate: ICategory,
+  cate: ICategory
+  /** whether project has been discontinued */
+  deprecated?: boolean
   /** tags */
-  tags?: ITag[]
+  // tags?: ITag[]
 }
 
 export const WORKS: IWork[] = [
@@ -82,7 +84,7 @@ export const WORKS: IWork[] = [
     link: 'https://app.evecalm.com/neuhelper/',
     github: 'https://github.com/oe/neuhelper',
     cate: 'chrome-extension',
-    tags: ['unmaintained'],
+    deprecated: true,
   },
   {
     title: 'My Webrequest',
@@ -91,7 +93,7 @@ export const WORKS: IWork[] = [
     link: 'https://app.evecalm.com/MyWebrequest/',
     github: 'https://github.com/oe/MyWebrequest',
     cate: 'chrome-extension',
-    tags: ['unmaintained'],
+    deprecated: true,
   },
   {
     title: 'Frontend Guideline',
@@ -172,7 +174,7 @@ export const WORKS: IWork[] = [
     link: 'https://raw.githubusercontent.com/oe/allodoxaphobia/master/miniapp.jpg',
     github: 'https://github.com/oe/allodoxaphobia',
     cate: 'mini-program',
-    tags: ['unmaintained'],
+    deprecated: true,
   },
   {
     title: 'Download Github Sub-folder',
@@ -189,7 +191,7 @@ export const WORKS: IWork[] = [
     link: 'https://github.com/oe/clean-qzone',
     github: 'https://github.com/oe/clean-qzone',
     cate: 'userscript',
-    tags: ['unmaintained'],
+    deprecated: true,
   },
   {
     title: 'SourceTree',
