@@ -70,8 +70,8 @@ export const WORKS: IWork[] = [
     cate: 'webapp',
   },
   {
-    title: 'KeyCode & CharCode',
-    description: 'Get keyboard\'s key code & character\'s unicode',
+    title: 'Keycode',
+    description: 'Get keyboard\'s event details',
     image: '',
     link: 'https://app.evecalm.com/keycode/',
     github: 'https://github.com/oe/keycode',
