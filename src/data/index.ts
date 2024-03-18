@@ -203,7 +203,7 @@ export const WORKS: IWork[] = [
   },
   {
     title: 'QRCode',
-    description: 'Generate QRCode in alfred workflow',
+    description: 'Generate QRCode in Alfred workflow',
     image: '',
     link: 'https://github.com/oe/qrcode-alfred-workflow/raw/main/QRCode.alfredworkflow',
     github: 'https://github.com/oe/qrcode-alfred-workflow',
