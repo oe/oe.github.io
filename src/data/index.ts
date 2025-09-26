@@ -47,35 +47,38 @@ export interface IWork {
 export const WORKS: IWork[] = [
   {
     title: 'Union Search',
-    description: 'A tinny(less than 50kb) web app makes the best search engine available for every one',
+    description:
+      'A tinny(less than 50kb) web app makes the best search engine available for every one',
     image: '',
     link: 'https://search.evecalm.com/',
     github: 'https://github.com/oe/search',
-    cate: 'webapp',
+    cate: 'webapp'
   },
   {
     title: 'DownGit',
-    description: 'Directly download or create download link to any GitHub accessible directory or file',
+    description:
+      'Directly download or create download link to any GitHub accessible directory or file',
     image: '',
     link: 'https://downgit.evecalm.com/#/home',
     github: 'https://github.com/oe/downgit',
-    cate: 'webapp',
+    cate: 'webapp'
   },
   {
     title: 'Bookmark Separator',
-    description: 'A tinny webapp that can help you separate bookmarks into different categories',
+    description:
+      'A tinny webapp that can help you separate bookmarks into different categories',
     image: '',
     link: 'https://app.evecalm.com/bookmark/',
     github: 'https://github.com/oe/bookmark',
-    cate: 'webapp',
+    cate: 'webapp'
   },
   {
     title: 'Keycode',
-    description: 'Get keyboard\'s event details',
+    description: "Get keyboard's event details",
     image: '',
     link: 'https://app.evecalm.com/keycode/',
     github: 'https://github.com/oe/keycode',
-    cate: 'webapp',
+    cate: 'webapp'
   },
   {
     title: 'Neuhelper',
@@ -84,7 +87,7 @@ export const WORKS: IWork[] = [
     link: 'https://app.evecalm.com/neuhelper/',
     github: 'https://github.com/oe/neuhelper',
     cate: 'chrome-extension',
-    deprecated: true,
+    deprecated: true
   },
   {
     title: 'My Webrequest',
@@ -93,7 +96,15 @@ export const WORKS: IWork[] = [
     link: 'https://app.evecalm.com/MyWebrequest/',
     github: 'https://github.com/oe/MyWebrequest',
     cate: 'chrome-extension',
-    deprecated: true,
+    deprecated: true
+  },
+  {
+    title: 'CORS Unlocker',
+    description: 'enable web app cors in modern browser',
+    image: '',
+    link: 'https://cors.forth.ink/',
+    github: 'https://github.com/oe/cors-unlocker',
+    cate: 'chrome-extension'
   },
   {
     title: 'Frontend Guideline',
@@ -101,23 +112,25 @@ export const WORKS: IWork[] = [
     image: '',
     link: 'https://app.evecalm.com/frontend-guideline/',
     github: 'https://github.com/oe/frontend-guideline',
-    cate: 'others',
+    cate: 'others'
   },
   {
     title: 'Web Extension Boilerplate',
-    description: 'Web extension boilerplate base on Parcel, supports all technologies you familiar with. Manifest v3 ready!',
+    description:
+      'Web extension boilerplate base on Parcel, supports all technologies you familiar with. Manifest v3 ready!',
     image: '',
     link: 'https://github.com/oe/web-extension-boilerplate',
     github: 'https://github.com/oe/web-extension-boilerplate',
-    cate: 'others',
+    cate: 'others'
   },
   {
     title: 'Webpack Userscript Template',
-    description: 'Create your own userscript with modern technology powered by webpack',
+    description:
+      'Create your own userscript with modern technology powered by webpack',
     image: '',
     link: 'https://github.com/oe/webpack-userscript-template',
     github: 'https://github.com/oe/webpack-userscript-template',
-    cate: 'others',
+    cate: 'others'
   },
   {
     title: 'SourceTree Custom Actions',
@@ -125,31 +138,34 @@ export const WORKS: IWork[] = [
     image: '',
     link: 'https://github.com/oe/sourcetree-custom-actions',
     github: 'https://github.com/oe/sourcetree-custom-actions',
-    cate: 'others',
+    cate: 'others'
   },
   {
     title: 'truncate-html',
-    description: 'Truncate html string(even contains emoji chars) and keep tags in safe. You can custom ellipsis sign, ignore unwanted elements and truncate html by words',
+    description:
+      'Truncate html string(even contains emoji chars) and keep tags in safe. You can custom ellipsis sign, ignore unwanted elements and truncate html by words',
     image: '',
     link: 'https://www.npmjs.com/package/truncate-html',
     github: 'https://github.com/oe/truncate-html',
-    cate: 'npm',
+    cate: 'npm'
   },
   {
     title: 'duplex-message',
-    description: 'A tinny(~3kb) utility that can simplify cross window(iframes, workers, same origin windows) and electron main / renderer process communications (please use npm package `simple-electron-ipc`)',
+    description:
+      'A tinny(~3kb) utility that can simplify cross window(iframes, workers, same origin windows) and electron main / renderer process communications (please use npm package `simple-electron-ipc`)',
     image: '',
     link: 'https://www.npmjs.com/package/duplex-message',
     github: 'https://github.com/oe/duplex-message',
-    cate: 'npm',
+    cate: 'npm'
   },
   {
     title: 'lerna-ci',
-    description: 'The essential toolkit for monorepo managed by lerna/yarn/pnpm/turbo/etc',
+    description:
+      'The essential toolkit for monorepo managed by lerna/yarn/pnpm/turbo/etc',
     image: '',
     link: 'https://www.npmjs.com/package/lerna-ci',
     github: 'https://github.com/oe/lerna-ci',
-    cate: 'npm',
+    cate: 'npm'
   },
   {
     title: 'composie',
@@ -157,7 +173,7 @@ export const WORKS: IWork[] = [
     image: '',
     link: 'https://www.npmjs.com/package/composie',
     github: 'https://github.com/oe/composie',
-    cate: 'npm',
+    cate: 'npm'
   },
   {
     title: 'async-task-schedule',
@@ -165,15 +181,16 @@ export const WORKS: IWork[] = [
     image: '',
     link: 'https://www.npmjs.com/package/async-task-schedule',
     github: 'https://github.com/oe/async-task-schedule',
-    cate: 'npm',
+    cate: 'npm'
   },
   {
     title: 'postcss-logical-polyfill',
-    description: 'A PostCSS plugin that provides physical property polyfills for CSS logical properties, enabling backward compatibility for older browsers and environments that don\'t support logical properties natively',
+    description:
+      "A PostCSS plugin that provides physical property polyfills for CSS logical properties, enabling backward compatibility for older browsers and environments that don't support logical properties natively",
     image: '',
     link: 'https://www.npmjs.com/package/postcss-logical-polyfill',
     github: 'https://github.com/oe/postcss-logical-polyfill',
-    cate: 'npm',
+    cate: 'npm'
   },
   {
     title: '关爱选择困难症',
@@ -182,15 +199,16 @@ export const WORKS: IWork[] = [
     link: 'https://raw.githubusercontent.com/oe/allodoxaphobia/master/miniapp.jpg',
     github: 'https://github.com/oe/allodoxaphobia',
     cate: 'mini-program',
-    deprecated: true,
+    deprecated: true
   },
   {
     title: 'Download Github Sub-folder',
-    description: 'A user script that allows you to download a Github repo or directory with a single click',
+    description:
+      'A user script that allows you to download a Github repo or directory with a single click',
     image: '',
     link: 'https://openuserjs.org/scripts/oe/Download_github_repo_online',
     github: 'https://github.com/oe/download-git-userscript',
-    cate: 'userscript',
+    cate: 'userscript'
   },
   {
     title: 'Clean Qzone',
@@ -199,15 +217,16 @@ export const WORKS: IWork[] = [
     link: 'https://github.com/oe/clean-qzone',
     github: 'https://github.com/oe/clean-qzone',
     cate: 'userscript',
-    deprecated: true,
+    deprecated: true
   },
   {
     title: 'SourceTree',
-    description: 'Search bookmarks in SourceTree and open with code editor / sourcetree / finder via Alfred',
+    description:
+      'Search bookmarks in SourceTree and open with code editor / sourcetree / finder via Alfred',
     image: 'https://alfred.app/workflows/saiya/sourcetree/icon.png',
     link: 'https://alfred.app/workflows/saiya/sourcetree/',
     github: 'https://github.com/oe/sourcetree-alfred-workflow',
-    cate: 'alfred',
+    cate: 'alfred'
   },
   {
     title: 'QRCode',
@@ -215,7 +234,7 @@ export const WORKS: IWork[] = [
     image: '',
     link: 'https://github.com/oe/qrcode-alfred-workflow/raw/main/QRCode.alfredworkflow',
     github: 'https://github.com/oe/qrcode-alfred-workflow',
-    cate: 'alfred',
+    cate: 'alfred'
   },
   {
     title: 'App Language Switcher',
@@ -223,6 +242,6 @@ export const WORKS: IWork[] = [
     image: 'https://alfred.app/workflows/saiya/app-language-switcher/icon.png',
     link: 'https://alfred.app/workflows/saiya/app-language-switcher/',
     github: 'https://alfred.app/workflows/saiya/app-language-switcher/',
-    cate: 'alfred',
-  },
-]
+    cate: 'alfred'
+  }
+];
