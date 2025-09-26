@@ -168,6 +168,14 @@ export const WORKS: IWork[] = [
     cate: 'npm',
   },
   {
+    title: 'postcss-logical-polyfill',
+    description: 'A PostCSS plugin that provides physical property polyfills for CSS logical properties, enabling backward compatibility for older browsers and environments that don\'t support logical properties natively',
+    image: '',
+    link: 'https://www.npmjs.com/package/postcss-logical-polyfill',
+    github: 'https://github.com/oe/postcss-logical-polyfill',
+    cate: 'npm',
+  },
+  {
     title: '关爱选择困难症',
     description: '微信小程序 关爱选择困难症, 解决选择困难问题',
     image: '',
